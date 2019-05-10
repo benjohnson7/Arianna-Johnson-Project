@@ -1,0 +1,260 @@
+body {
+	font-size: 1em;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #fff;
+}
+
+main {
+	max-width: 90%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+
+section div {
+	margin: 4% 0;
+
+	/*this controls the space between each div row*/
+}
+
+img{
+	max-width: 100%;
+}
+
+h2{ column-span: all; }
+
+footer{
+	padding: 2%;
+	background: #d3d3d3;
+	text-align: center;
+}
+
+
+/*******************************************************************************
+ **** ROW ONE: Navigation option spanning whole page
+ ******************************************************************************/
+.row1 {
+	background-color: #000;
+	color: #fff;
+	padding: 0;
+}
+
+.row1 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.row1 ul li {
+	margin: 0;
+	padding: 2%;
+}
+.row1 ul li:hover {
+	background-color: #333;
+}
+
+.nav li{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.row1 a{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*******************************************************************************
+ **** ROW TWO: Navigation option with colored boxes
+ ******************************************************************************/
+.row2 {
+	color: #fff;
+	padding: 2% 0;
+}
+.row2 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.row2 ul li {
+	background-color: #000;
+	margin: 0 .2%;
+	padding: 2% 4%;
+}
+.row2 ul li:hover {
+	background-color: #333;
+}
+
+.row2 a{ color: #fff;
+	text-decoration: none;
+}
+
+/*******************************************************************************
+ **** ROW THREE: "Clear" navigation option with logo
+ ******************************************************************************/
+.row3 {
+	color: #000;
+	padding: 2% 2%;
+	min-height: 75px;
+}
+.row3 img {
+	display: block;
+	float: left;
+	max-height: 100%;
+}
+.row3 ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.row3 ul li {
+	border-left: 1px #000 solid;
+	margin: 0;
+	padding: 2% 4%;
+}
+.row3 ul li.logo {
+	width: 15%;
+}
+.row3 ul li:first-child {
+	border-left: 0px #000 solid;
+}
+.row3 ul li:last-child {
+	border-right: 1px #000 solid;
+}
+.row3 ul li:hover {
+	background-color: #bbb;
+	color: #fff;
+}
+
+.row3 a{
+	color: #000;
+	text-decoration: none;
+}
+
+/*******************************************************************************
+ **** ROW FOUR: 3 Image Slide Show Banner
+ ******************************************************************************/
+.row4{
+	background-color: #000;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;
+}
+.row4 div{ margin: 0; }
+.row4 .image{
+	flex-basis: 34%;
+}
+
+.row4 .image:hover{
+	flex-basis: 85%;
+}
+
+.row4 .image { overflow: hidden; }
+.row4 .image img {min-width: 800px; }
+.row4 .image.one{ background-color: #fff; }
+.row4 .image.two{ background-color: #fff; }
+.row4 .image.three{ background-color: #fff; }
+.row4 .image.four{ background-color: #fff; }
+
+
+/*******************************************************************************
+ **** ROW FIVE: Multi purpose for a single image, line, centered text or centered logo/image
+ ******************************************************************************/
+.row5{
+	text-align: center;
+}
+
+/*******************************************************************************
+ **** ROW SIX: Image "Galleries"
+ ******************************************************************************/
+.row6{
+	display: grid;
+	grid-template-areas:
+		"up5"
+		"up3"
+		"up2"
+		"up1";
+	margin: 0 4%;
+}
+
+.row6 div{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.row6 p{
+	width: auto;
+	padding: 0 15px 5px;
+}
+
+.row6 img{
+	width: 100%;
+}
+
+
+
+/*******************************************************************************
+ **** ROW SEVEN: 3 Different Sections of text
+ ******************************************************************************/
+
+.row7{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	margin: 0 4%;
+}
+
+.row7 div{
+	flex-basis: 28%;
+	min-width: 200px;
+	margin: 0 2%;
+}
+
+
+/*******************************************************************************
+ **** ROW EIGHT: One block of text broken up into columns
+ ******************************************************************************/
+
+.row8 {
+/*	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: stretch;*/
+	margin: 4% 4%;
+	overflow: auto;
+
+}
+
+.row8 p{
+	column-count: 2;
+
+}
+.row8 img{
+	max-width: 20%;
+	float: left;
+	margin: 0 2% 2% 0;
+}
+
+.row8 p:first-child{
+	margin-top: 0;
+}
+
+
