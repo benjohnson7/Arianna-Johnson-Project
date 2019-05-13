@@ -1,4 +1,22 @@
 /* here you add styles */
 body {
-	background-color: rgb(136, 46, 46);
+	background-color: #bfd8d2;
+}
+.rounded-image{
+	border-radius: 50%;
+}
+
+.color-block {
+	width: 100%;
+	min-height: 500px;
+	display: block;
+}
+#one {
+	background-color: #dcb239;
+}
+#two {
+	background-color: #df744a;
+}
+#three {
+	background-color: #fedcd2;
 }
